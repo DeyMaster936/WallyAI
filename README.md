@@ -1,6 +1,8 @@
 # 🤖 Wally SDK
 
 <div align="center">
+  ![WhatsApp Image 2025-05-19 at 18 34 48 (1)](https://github.com/user-attachments/assets/e1ffb50e-e098-4670-899d-6d080bd9e140)
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
