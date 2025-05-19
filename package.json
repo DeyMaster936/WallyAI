@@ -1,0 +1,43 @@
+{
+  "name": "@wally-ai/sdk",
+  "version": "1.0.0",
+  "description": "AI-powered crypto wallet SDK with personality-driven trading",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "crypto",
+    "wallet",
+    "ai",
+    "trading",
+    "blockchain",
+    "defi"
+  ],
+  "author": "Wally AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "axios": "^1.6.2",
+    "openai": "^4.20.1",
+    "ethers": "^6.9.0",
+    "ws": "^8.14.2",
+    "natural": "^6.8.0",
+    "technicalindicators": "^3.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/jest": "^29.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  }
+} 
